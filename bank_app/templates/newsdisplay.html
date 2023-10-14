@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+
+<!--        body{-->
+<!--          background-image:url("{% static 'Axis Bank Website UX_UI (2).png' %}");background-repeat:no repeat;background-size:100% 950px;background-attachment:scroll;-->
+<!--        }-->
+
+        #z{
+            background-color: black;
+            height:750px;
+            width: 100%;
+
+        }
+
+        #a{
+            height: 750px;
+            width:55%;
+            color: rgb(176, 5, 250);
+            background-image:url("{% static 'Premium Photo _ Secure online payment and internet banking via credit card on mobile.png' %}");background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+            text-decoration: ;
+
+            float: left;
+            margin-left: px;
+
+        }
+
+        #m{
+            margin-top:80px;
+        }
+        #b{
+            /* height:50px;
+            width: 40px;
+            background: white; */
+            margin-left: 250px;
+
+            margin-top:100px;
+
+
+        }
+
+
+        #e{
+            height: 30px;
+            width: 280px;
+            background-color: aliceblue;
+            font-style:bold;
+            padding-top: 8px;
+            border: solid rgb(176, 5, 250) ;
+            margin-left:150px;
+            margin-top:41px;
+        }
+        #f{
+            height: 30px;
+            width: 280px;
+            background-color: aliceblue;
+            font-style:bold;
+            padding-top: 8px;
+            border: solid rgb(176, 5, 250) ;
+            margin-left: 150px;
+            margin-top: 20px;
+
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color:rgb(86, 112, 246);
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+        #h{
+            margin-left:290px;
+            margin-top: 25px;
+        }
+        #k{
+            height: 750px;
+            width:45%;
+            color:white;
+            background-color:#C850C0;
+background-image:url("{% static 'Axis Bank Website UX_UI (2).png' %}");background-repeat:no repeat;background-size:95% 800px;background-attachment:scroll;
+            float:right;
+            margin-right:;
+
+
+
+        }
+        #h1{
+            margin-top:250px;
+        }
+        #h{
+            margin-right: 5px;
+            margin-left: 200px;
+        }
+        #c {
+            background-color: rgb(168, 113, 220);
+            float: left;
+            margin-top: 50px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/81f46cafa8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+<!--    <div id="z">-->
+    <div id="a" class="container-fluid">
+
+        <h1>Latest News And Updates by Axis Bank</h1>
+        <div class="row">
+             {% for i,j,k,l in x %}
+
+            <div class="col-12">
+                <p>{{i}}</p>
+                <p>{{j}}<a href="">Read More</a></p>
+                <p>{{k}}<br><i class="fa-solid fa-thumbs-up"></i> <i class="fa-regular fa-heart"></i></p>
+
+
+
+            </div>
+             {% endfor %}
+        </div>
+
+
+
+
+    </div>
+
+    <div id="k" class="container-fluid">
+
+    </div>
+<!--    </div>-->
+
+</form>
+
+
+</body>
+</html>

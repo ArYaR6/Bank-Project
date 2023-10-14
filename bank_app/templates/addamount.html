@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        #z{
+           height:850px;
+           width:95%;
+           background-image:url("{% static 'Premium Photo _ Secure online payment and internet banking via credit card on mobile.png' %}");background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+        }
+        #k{
+            height: 850px;
+            width:20%;
+            color:white;
+            background-color:white;
+background-image: linear-gradient(43deg, #C850C0 46%);
+            float:left;
+            margin-right: 144.3px;
+            margin-top:0px;
+
+
+        }
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+    <div id="z">
+
+
+        <div id="k">
+            <div id="h1"><img style="height:280px;width:280px;border:solid white;" src="{% static 'Canada GST Tax.jpeg' %}"></div>
+            <br>
+            <div id="h2"><img style="height:280px;width:280px;margin-top:-22px;border:solid white;" src="{% static 'Hand entering PIN_pass code on ATM.jpeg' %}"></div>
+           <div id="h3"><img style="height:280px;width:280px;margin-top:-5px;border:solid white;" src="{% static 'b627aa7a-b5e5-47c5-b6a4-4f15b7c529ce.png' %}"></div>
+
+        </div>
+        <div style="height:500px;width:800px;background-color:;margin-bottom:-150px;padding-bottom:300px;padding">
+            <div style="padding-top:100px;padding-left:200px;font-size:30px;"><h1>Add Amount</h1></div><br>
+            <div class="row">
+                <div class="col-6">
+
+                    <input style="text-align:center;margin-left:0px;height:35px;width:300px;background-color:white;border:solid black;"
+                           type="number" name="amount" placeholder="Enter amount to add">
+
+
+                </div><br><br>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-6">
+
+
+                    <input style="text-align:center;margin-left:0px;height:35px;width:300px;background-colo:rgb(176, 5, 250);border:solid black;"
+                           type="number" name="pi" placeholder="Enter the 4 digit pin"><br><br><br>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <input style="margin-left:0px;width:150px;height:40px;background-color:aliceblue;border-radius:20px;"
+                       class="btn" type="submit" value="Add Amount">
+            </div>
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>

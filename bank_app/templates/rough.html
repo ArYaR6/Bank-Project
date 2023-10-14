@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+
+
+
+
+    </style>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table id="Table1">
+    <tr id="head">
+        <th>SI.No</th>
+
+
+        <th>Topic</th>
+        <th>Date</th>
+        <th>Content</th>
+
+    </tr>
+    {% for i in x %}
+
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.date}}</td>
+        <td>{{i.topic}}</td>
+        <td>{{i.content}}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+</body>
+</html>

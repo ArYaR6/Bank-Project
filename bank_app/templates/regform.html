@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+          #z{
+            background-image:url("{% static 'Axis Bank Concept.jpeg' %}");background-repeat:no repeat;background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+            height:750px;
+            width: 100%;
+
+        }
+
+        #a{
+            height: 650px;
+            width:40%;
+            color: rgb(176, 5, 250);
+            background-image:url("{% static 'Axis Bank Concept.jpeg' %}");background-repeat:no repeat;background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+
+
+            float: left;
+            margin-left: 145px;
+            margin-top:40px;
+
+        }
+
+        #m{
+            margin-top:80px;
+        }
+        #b{
+            /* height:50px;
+            width: 40px;
+            background: white; */
+            margin-left: 250px;
+
+            margin-top:100px;
+
+
+        }
+        #c{
+            /* height:50px;
+            width: 40px;
+            background: white;  */
+            margin-left:50px;
+            margin-top: 100px;
+
+
+
+        }
+        #b,#c{
+            display: inline;
+        }
+
+        #e{
+            height: 30px;
+            width: 280px;
+            background-color: aliceblue;
+            font-style:bold;
+            padding-top: 8px;
+            border: solid rgb(176, 5, 250) ;
+            margin-left:150px;
+            margin-top:41px;
+        }
+        #f{
+            height: 30px;
+            width: 280px;
+            background-color: aliceblue;
+            font-style:bold;
+            padding-top: 8px;
+            border: solid rgb(176, 5, 250) ;
+            margin-left: 150px;
+            margin-top: 20px;
+
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color:rgb(86, 112, 246);
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+        #h{
+            margin-left:290px;
+            margin-top: 25px;
+        }
+        #k{
+            height: 650px;
+            width:40%;
+            color:white;
+            background-color:black;
+background-image: linear-gradient(43deg, #C850C0 46%);
+            float:right;
+            margin-right: 144.3px;
+            margin-top:40px;
+            border-radius:1px 1px 50px 1px;
+
+
+        }
+        #h1{
+            margin-top:250px;
+        }
+        #h{
+            margin-right: 5px;
+            margin-left: 200px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="z">
+    <div id="a">
+        <!--        <h1 id="m" style="text-align: center;">Login</h1><br><br><br>-->
+        <!--        <div id="b"><i class="fa-brands fa-facebook fa-2x" style="color: rgb(176, 5, 250);height: 5px;width: 5px;"></i></div>-->
+        <!--        <div id="c"><i class="fa-sharp fa-solid fa-envelope fa-2x" style="color: rgb(176, 5, 250);"></i></div><br><br><br><br>-->
+        <!--        <div id="d" style="text-align: center;font-size: 20px;">Or use your account</div>-->
+        <!--        <div id="e">Email</div>-->
+        <!--        <div id="f">Password</div><br><br>-->
+        <!--        <div id="g" style="text-align: center;">Forgot your Password?</div>-->
+        <!--        <div id="h"><button class=btn-grad style="border-radius: 50px;text-align:center;">LOG IN</button></div>-->
+
+
+    </div>
+
+    <div id="k">
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            <center><h2 style="margin-top:80px;font-size:30px;color:rgb(190, 253, 17);">Welcome New User!</h2><br><br>
+            </center>
+
+            <div class="row">
+                <div class="col-6">
+                    <input style="text-align:center;margin-right:80px;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="text" name="fname" placeholder="First Name">
+                    <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="text" name="lname" placeholder="Last Name">
+                </div>
+                <br>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <input style="text-align:center;margin-right:80px;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="text" name="uname" placeholder="User Name">
+                    <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="email" name="email" placeholder="Email">
+                </div>
+                <br>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="number" name="phone" placeholder="Phone">
+                    <input style="text-align:center;margin-left:90px;height:35px;width:220px;background-color:rgb(224, 249, 152);border-radius:20px;"
+                           type="file" name="file" placeholder="Image Upload">
+                </div>
+                <br>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="number" name="pin" placeholder="4 Digit Pin">
+                    <input style="text-align:center;margin-left:80px;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="number" name="pins" placeholder="Re Enter 4 Digit Pin">
+
+                </div>
+                <br><br><br><br>
+
+
+            </div>
+
+            <div class="row">
+                <input style="margin-left:200px;width:150px;height:40px;background-color:rgb(190, 253, 17);border-radius:20px;"
+                       class="btn" type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

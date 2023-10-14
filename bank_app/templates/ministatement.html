@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+    body{
+    background-image:url("{% static 'Close up female hand holds levitating template mockup bank credit card with online service isolated on blue background.jpeg' %}");background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+    }
+
+        #k{
+            height: 650px;
+            width:40%;
+            color:black;
+            background-colo:
+background-image:
+
+            margin-right: 144.3px;
+            margin-top:40px;
+
+
+        }
+        #h1{
+            margin-top:250px;
+        }
+        #h{
+            margin-right: 5px;
+            margin-left: 200px;
+        }
+        @import 'nav.css';
+
+.hero-section{
+    width: 55%;
+    height: calc(100vh - 90px);
+    background-image: url({% static 'Upper App — Do more, go upper.png' %});
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:600px;
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div id="k">
+
+    <header class="hero-section">
+        <div class="content">
+
+            <form method="post">{% csrf_token %}
+                <p class="sub-heading"><b>Show Mini Statement</b></p>
+                <input style="height:40px;margin-left:20px;border:solid gray;text-align:center;" type="number"
+                       name="pin" placeholder="Enter 4 Digit Pin"><br><br>
+
+                <select name="ministatement">
+                    <option>--select--</option>
+                    <option value="deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+
+                </select><br>
+
+                <br>
+                <input style="height:40px;margin-left:20px;border-radius:100px;background-color:black;color:white;border:solid gray;"
+                       type="submit" value="Generate Statement">
+
+
+            </form>
+
+        </div>
+    </header>
+
+
+</div>
+</div>
+
+
+</body>
+</html>

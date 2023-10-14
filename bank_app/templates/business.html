@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        .container-fluid{
+    background-color:#b12650;
+    height:100px;
+
+    }
+
+
+
+     #z{
+            background-color: black;
+            height:750px;
+            width: 100%;
+
+        }
+
+        #p{
+            height: 800px;
+            width:350px;
+            color:aliceblue;
+            background-color:#b12650;
+
+
+            float: left;
+
+
+
+        }
+
+        #m{
+            margin-top:80px;
+        }
+
+
+
+        #e{
+            height: 30px;
+            width: 280px;
+            background-color: aliceblue;
+            font-style:bold;
+            padding-top: 8px;
+            border: solid rgb(176, 5, 250) ;
+            margin-left:150px;
+            margin-top:41px;
+        }
+        #f{
+            height: 30px;
+            width: 280px;
+            background-color: aliceblue;
+            font-style:bold;
+            padding-top: 8px;
+            border: solid rgb(176, 5, 250) ;
+            margin-left: 150px;
+            margin-top: 20px;
+
+        }
+
+
+        #h{
+            margin-left:290px;
+            margin-top: 25px;
+        }
+        #k{
+            height: 800px;
+            width:1114px;
+            color:black;
+            background-image:url("{% static 'Small Things to Save Money - Budget Savvy Diva.jpeg' %}");background-repeat:no repeat;background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+            padding-bottom:-100px;
+            float:right;
+
+
+
+        }
+        #h1{
+            margin-top:150px;
+        }
+        #h{
+            margin-right: 5px;
+            margin-left: 200px;
+        }
+
+        #b1{
+            margin-top:-30px;
+
+        }
+        k2:hover{
+
+            background-color:black;
+
+        }
+
+        .gfg {
+            margin: 3%;
+            position: relative;
+        }
+
+        .first-txt {
+            position: absolute;
+            top: 17px;
+            left: 50px;
+<!--            margin-right:150px;-->
+            color:black;
+        }
+
+        .second-txt {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            color:rgb(82, 82, 82);
+
+
+            margin-bottom:300px;
+        }
+
+
+        .gfg img{
+            width:10%;height: 10%;
+
+            border-radius:20px;
+            height:450px;
+            width:350px;
+            display:inline;
+        }
+        .gfg:hover img{
+            scale:110%;
+        }
+        .card:hover{
+            background-color:#b12650;;
+        }
+
+       #axis{
+       position:relative;
+       }
+        main {
+    background:
+    padding: 64px 0 32px 0;
+    color:rgb(82, 82, 82);
+
+    .second {
+        margin-top: 50px;
+    }
+
+    h5 {
+        position: relative;
+        font-weight: 500;
+        width: 100%;
+        text-transform: uppercase;
+        ;
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            bottom: -8px;
+            left: 0;
+            background: #fff;
+        }
+    }
+
+    ul {
+        padding-top: 12px;
+    }
+
+    .contact {
+        &:after {
+            width: 100px;
+            color:black;
+        }
+    }
+
+    .about {
+        &:after {
+            width: 60px;
+        }
+    }
+
+    .features {
+        &:after {
+            width: 115px;
+        }
+    }
+
+    .comparison {
+        &:after {
+            width: 170px;
+        }
+    }
+
+    .help {
+        &:after {
+            width: 140px;
+        }
+    }
+
+    .affiliate {
+        &:after {
+            width: 150px;
+        }
+    }
+
+    .artical {
+        &:after {
+            width: 110px;
+        }
+    }
+
+    #con {
+        .row {
+            &:nth-child(2) {
+                i {
+                    color: #111;
+                    font-size: 16px;
+                    padding: 8px;
+                    border-radius: 50%;
+                    background-color: #fff;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -8px;
+                        left: 20px;
+                        height: 1px;
+                        width: 20px;
+                        background: #fff;
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            left: 55px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                padding: 28px 0;
+
+                h3 {
+                    font-weight: 800;
+                }
+
+                .list-inline-item {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        margin-left: 4px;
+                        margin-top: 6px;
+                        height: 16px;
+                        width: 2px;
+                        background: #fff;
+                    }
+
+                    &:nth-last-child(1) {
+                        &:after {
+                            content: '';
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media query
+@media only screen and (max-width: 650px) {
+
+    .first,
+    .second {
+        margin-top: 24px !important;
+    }
+}
+ .list-unstyled:hover{
+     text-decoration:underline;
+
+ }
+
+ #ic1:hover{
+ background-image:
+            radial-gradient(circle at 30% 107%,
+            #fdf497 6%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+            outline-color: #a02d76;
+ }
+ #ic2:hover{
+            background-color: blue;
+            outline-color: blue;
+        }
+        #ic3:hover{
+            background-color: #285AEB;
+            outline-color: #285AEB;
+
+        }
+        #ic4:hover{
+        background-color: red;
+        outline-color: red;
+        }
+
+        #ic5:hover{
+            background-color: #0077b5;
+            outline-color: #0077b5;
+
+        }
+        #pri:hover{
+        color:white;
+        }
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/81f46cafa8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div class="container_fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img style="padding-left:-50px;height:150px;width:150px;"
+                 src="{% static 'Axis Bank Logo PNG Images (Transparent HD Photo Clipart).png' %}">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="margin-left:0px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li style="margin-left:50px;" class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/bank_app/bus/"><b style="font-size:20px;">Home</b></a>
+                    </li>
+                    <li style="margin-left:30px;" class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/bank_app/logview/"><b style="font-size:20px;">Login</b></a>
+                    </li>
+                    <!--        <li class="nav-item dropdown">-->
+                    <!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+                    <!--            Dropdown-->
+                    <!--          </a>-->
+                    <!--          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                    <!--            <li><a class="dropdown-item" href="#">Action</a></li>-->
+                    <!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+                    <!--            <li><hr class="dropdown-divider"></li>-->
+                    <!--            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                    <!--          </ul>-->
+                    <!--        </li>-->
+                    <li style="margin-left:30px;" class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:8000/bank_app/priority/" tabindex="-1" aria-disabled="true"><b style="font-size:20px;">Priority</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b style="font-size:20px;"></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b style="font-size:20px;"></b></a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--####CAROUSEL###-->
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="{% static 'bank bus.jpg' %}" class="d-block w-100" alt="...">
+            <div style="margin-bottom:100px;margin-right:380px;" class="carousel-caption d-none d-md-block">
+                                <h2 style="color:#b12650;margin-right:100px;">Where your every search ends.</h2>
+                                <p style="font-size:40px;margin-right:20px;font-family:timesnewroman">Your trusted partner in banking and beyond </p>
+                                <p ></p>
+
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static 'neo.jpg' %}" class="d-block w-100" alt="...">
+            <div style="margin-bottom:250px;margin-right:400px;color:aliceblue;"
+                 class="carousel-caption d-none d-md-block">
+                <h1 style="margin-right:20px;">Introducing <i style="color:#b12650;">NEO</i> by Axis Bank</h1><br>
+                <h2 style="margin-right:140px;">Neo API Suite|Online Banking</h2>
+                <h2>Mobile Banking|Digital Trade Solutions</h2>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'bank lady.jpg' %}" class="d-block w-100" alt="...">
+            <div style="margin-bottom:350px;color:white;" class="carousel-caption d-none d-md-block">
+                <h1>IFSC Banking Unit,Gift City</h1><br>
+                <h2>Preferred partner for all your global banking needs</h2>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+
+
+<!--#####CARDS####-->
+<div>
+    <div><h2 style="margin-left:200px;display:flex;">Take your business to greater heights with Axis Bank’s incredible range of</h2>
+        <h2 style="color:#b12650;margin-left:450px;">financial services & revolutionary products</h2>
+
+    </div>
+    <br>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 col-lg-4 col-sm-12 col-md-12">
+            <div class="gfg">
+                <img src="{% static 'axis_api.jpg' %}">
+                <h4 class="first-txt">
+                    Axis APIs
+                </h4>
+
+                <p class="second-txt">
+                    Accelerate your financial innovation with <br>Axis Transaction Banking APIs
+
+                </p>
+            </div>
+        </div>
+        <div class="col-4 col-lg-4 col-sm-12 col-md-12">
+            <div class="gfg">
+                <img src="{% static 'cash_management_services.jpg' %}">
+                <h4 class="first-txt">
+                    Cash Management Services
+                </h4>
+
+                <p class="second-txt">
+                    A complete payments & collections platform, engineered for growth
+                </p>
+            </div>
+        </div>
+        <div class="col-4 col-lg-4 col-sm-12 col-md-12">
+            <div class="gfg">
+                <img src="{% static 'corporate_finance.jpg' %}">
+                <h4 class="first-txt">
+                    Corporate Finance
+                </h4>
+
+                <p class="second-txt">
+                    Providing the right financing option to lead your business forward
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br>
+</div>
+
+
+<div style="height:500px;width:100%;background-color:rgb(240, 239, 239);"><br><br>
+    <center><h1>Why <b style="color:#b12650;"> AXIS</b></h1></center>
+    <center><p style="color:rgb(82, 82, 82);">At Axis, we are committed to partnering with you at every step of your
+        journey and providing you an unparalleled experience with our tailored solutions in<br>banking and beyond.
+    </center>
+    </p><br>
+
+    <!--    WHY AXIS-->
+<div id="axis" class="container">
+    <div class="row">
+        <div class="col-4 col-lg-4 col-sm-12 col-md-12">
+            <div class="card" style="width: 22rem;height:250px;border-radius:10px;">
+                 <img  style="height:80px;width:80px;margin-left:140px;margin-top:10px;" src="{% static 'one_axis.svg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <center>  <h5 style="color:black;" class="card-title">One Axis</h5></center>
+                    <p style="color:rgb(82, 82, 82);" class="card-text">
+                        Navigate financial journey with ease, One Axis has got you covered for all your banking and beyond needs
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-lg-4 col-sm-12 col-md-12">
+            <div class="card" style="width:22rem;height:250px;border-radius:10px;">
+                <div class="card-body">
+                     <img style="height:70px;width:70px;margin-left:130px;" src="{% static 'our_subsidiaries.svg' %}" class="card-img-top" alt="...">
+                    <center><h5 style="margin-top:20px;" class="card-title">Our Subsidiaries</h5></center>
+
+                    <p style="color:rgb(82, 82, 82);" class="card-text">Our Subsidiaries are your trusted partners for end-to-end corporate banking solutions.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-lg-4 col-sm-12 col-md-12">
+            <div class="card" style="width:22rem;height:250px;border-radius:10px;">
+                <div class="card-body">
+                     <img  style="height:70px;width:70px;margin-left:140px;" src="{% static 'awards_media.svg' %}" class="card-img-top" alt="...">
+                   <center><h5 style="margin-top:20px;" class="card-title">Awards&Media</h5></center>
+
+                    <p style="color:rgb(82, 82, 82);" class="card-text">Our award and accolades are a testament to our commitment in providing exceptional banking services</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<!-- ###FOOTER##-->
+
+<main>
+    <div id="con" class="container">
+			<div style="margin-top:100px;" id="foot" class="row">
+				<div class="col-12 col-md-6 col-lg-2">
+					<div class="first">
+						<h5 style="color:black;font-size:15px;" class="contact">CONTACT US</h5>
+						<ul style="font-size:5;" class="list-unstyled">
+							<li>Call: 1860-419-5555</li>
+							<li>SMS BAL to 56161600 or +919951860002</li>
+                            <li>to get your Account Balance</li><br>
+                            <li>Call: 1860-500-5555</li>
+                            <li>SMS MINI to 56161600 or +919951860002</li>
+                            <li>to get your Mini Statement</li>
+
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-12 col-md-6 col-lg-2">
+					<div class="first">
+						<h5 style="color:black;font-size:15px;" class="features">SHAREHOLDERS' CORNER</h5>
+						<ul class="list-unstyled">
+                            <li> Stock Information</li>
+							<li>Regulatory Disclosures Section</li>
+							<li>Shareholder's Information</li>
+							<li>Financial Results & other information</li>
+							<li>Compliance Calendar</li>
+							<li>Investor FAQs</li>
+                            <li>Investor Contacts</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="first">
+						<h5 style="color:black;font-size:15px;" class="comparison">MEDIA CENTER</h5>
+						<ul class="list-unstyled">
+							<li>Corporate Profile</li>
+							<li>Vision and Values</li>
+                            <li>Awards & Recognition</li>
+							<li>Press release</li>
+							<li>Gallery</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-2">
+					<div class="first">
+						<h5 style="color:black;font-size:15px;" class="help">OTHER LINKS</h5>
+						<ul class="list-unstyled">
+							<li>Extract of Board Approved policy<br>on Co-Lending Model</li>
+							<li>Board Note & Guidelines-<br>Resolution Framework 2.0</li>
+                            <li>DigiSaathi Helpline</li>
+                            <li>Axis Group</li>
+                            <li>Sparsh Board</li>
+                            <li>Careers</li>
+                            <li>CSR & Sustainability</li>
+                        </ul>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3">
+					<div class="first">
+						<h5 style="color:black;font-size:15px;" class="artical">PNO / NODAL DESK</h5>
+                        <ul>
+                            <li>Level 1 – Queries, Request or <br>Complaint Redressal</li>
+                            <li>Level 2 – Write to Nodal Officer</li>
+                            <li>Level 3 – Write to Principal Nodal<br> Officer</li>
+                            <li>(Email ID: PNO@axisbank.com)</li>
+                        </ul>
+
+					</div>
+				</div>
+			</div>
+            <div class="row ">
+				<div class="col-4">
+                    <div class="icons">
+                        <label><b style="color:black;font-size:15px;">OUR OFFERINGS</b>
+                            Digital FD,Personal Loan, Car Loan,Home Loan, Savings Account,24x7 Loans, Credit Card, FD, FD Interest Rates, Education Loan, Current Account, Fastag, Trade & Forex, CMS, TATA AIG General Insurance, ICICI Lombard General Insurance, Axis Pay,Axis Mobile, Internet Banking, PPF Account, 24x7 Loan Against SecuritiesNew, Mutual Fund Management, Digital Gold, Axis Family Book of Records
+                        </label>
+
+
+
+                    </div>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-4">
+                    <div class="icons">
+                        <label><b style="color:black;font-size:15px;">CONNECT WITH US ON</b></label>
+                        <i id="ic1" class="fa-brands fa-instagram fa-2x"></i>
+                        <i id="ic2" class="fab fa-facebook fa-2x"></i>
+                        <i id="ic3" class="fab fa-twitter fa-2x"></i>
+                        <i id="ic4" class="fa-brands fa-youtube fa-2x"></i>
+                        <i id="ic5" class="fa-brands fa-linkedin-in fa-2x"></i><br><br>
+                        <p style="color:black;">Site best viewed in IE10+, Firefox 47+, Chrome 55+, Safari 5.0+ at 1024 X 768 pixels resolution</p>
+                        <p style="color:black;">Please do not believe any entity using Axis Bank logos & branding to request the public for money in exchange for opening a Customer Service Point.</p>
+
+                    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="https://imgbb.com/"><img src="https://i.ibb.co/z6ppjSQ/bv-white-logo.png"
+							alt="bv-white-logo" style="height:32px;"></a>
+					<ul id="pri" style="height:50px;width:100%;background-color: rgb(21, 21, 21);text-align:center;" class="list-unstyled list-inline">
+                        <li style="margin-top:10px;font-size:20;" class="list-inline-item">Copyright © 2023Axis Bank</li>
+						<li style="margin-left:350px;" class="list-inline-item">Privacy Policy|</li>
+                        <li class="list-inline-item">Disclaimer|</li>
+						<li class="list-inline-item">Code Of Commitment|</li>
+						<li class="list-inline-item">Responsible Disclosure Policy</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+</body>
+</html>

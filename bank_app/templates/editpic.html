@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+       #z{
+         height:900px;
+         width:95%;
+         background-color:rgb(2, 66, 76);
+       }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <div id="z">
+        <div class="row">
+            <div class="col-6">
+                    <img src="{% static img %}" height="300px" ;width="300px" ;>
+                <input style="text-align:center;margin-left:90px;height:35px;width:220px;background-color:rgb(176, 5, 250);border-radius:20px;"
+                       type="file" name="file" placeholder="Image Upload">
+
+
+            </div>
+            <br>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-6">
+
+
+                <input style="text-align:center;margin-right:80px;height:35px;width:220px;border-radius:20px;background-colo:rgb(176, 5, 250);"
+                       type="text" name="uname" placeholder="User Name" value="{{a.uname}}"><br><br><br>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <input style="margin-left:00px;width:150px;height:40px;background-color:aliceblue;border-radius:20px;"
+                   class="btn" type="submit" value="SUBMIT">
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <style>
+     #a{
+            height: 750px;
+            width:55%;
+            color:
+            background-image:url("{% static '' %}");background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+            text-decoration:none ;
+
+            float: left;
+            margin-left:350px;
+            border:
+
+        }
+
+
+
+
+
+  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Your Favourate News are Here...</h1><br>
+<form method="post">{% csrf_token %}
+<!--    <div id="z">-->
+    <div id="a" class="container-fluid">
+
+
+        <div class="row">
+             {% for i in x %}
+             {% if i.uid == id %}
+
+            <div class="col-12">
+                <p><b style="font-size:20px;">{{i.topic}}</b></p>
+                <p>{{i.content}}<a href="">Read More</a></p>
+                <p>{{i.date}}<br>
+
+            </div>
+             {% endif %}
+             {% endfor %}
+        </div>
+    </div>
+
+    <div id="k" class="container-fluid">
+
+    </div>
+<!--    </div>-->
+
+</form>
+
+
+</body>
+</html>

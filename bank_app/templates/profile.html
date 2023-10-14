@@ -1,0 +1,319 @@
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+
+<!--    <style>-->
+
+<!--        #z{-->
+<!--            background-color:rgb(2, 66, 76);-->
+<!--            height:650px;-->
+<!--            width: 95%;-->
+<!--            border-radius:50px 0px 0px 50px;-->
+
+<!--        }-->
+<!--        #l{-->
+
+<!--           float:left;-->
+<!--           color:whitesmoke;-->
+<!--           margin-top:20px;-->
+
+
+
+<!--        }-->
+<!--&lt;!&ndash;         #l1{&ndash;&gt;-->
+<!--&lt;!&ndash;          height:200px;&ndash;&gt;-->
+<!--&lt;!&ndash;          width:200px;&ndash;&gt;-->
+<!--&lt;!&ndash;          backround-color:gray;&ndash;&gt;-->
+<!--&lt;!&ndash;          border:solid;&ndash;&gt;-->
+
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--        #a{-->
+<!--            height: 400px;-->
+<!--            width:30%;-->
+<!--            color: rgb(176, 5, 250);-->
+<!--            background-color:rgb(5, 124, 124);-->
+<!--            float: left;-->
+<!--            margin-left: 80px;-->
+<!--            margin-top:200px;-->
+
+<!--        }-->
+
+<!--        #m{-->
+<!--            margin-top:80px;-->
+<!--        }-->
+
+
+<!--        #e{-->
+<!--            height: 30px;-->
+<!--            width: 280px;-->
+<!--            background-color: aliceblue;-->
+<!--            font-style:bold;-->
+<!--            padding-top: 8px;-->
+<!--            border: solid rgb(176, 5, 250) ;-->
+<!--            margin-left:80px;-->
+<!--            margin-top:41px;-->
+<!--            color:black;-->
+<!--        }-->
+<!--        #f{-->
+<!--            height: 30px;-->
+<!--            width: 280px;-->
+<!--            background-color: aliceblue;-->
+<!--            font-style:bold;-->
+<!--            padding-top: 8px;-->
+<!--            border: solid rgb(176, 5, 250) ;-->
+<!--            margin-left: 80px;-->
+<!--            margin-top: 20px;-->
+<!--            color:black;-->
+
+<!--        }-->
+<!--          #q{-->
+<!--            height: 30px;-->
+<!--            width: 280px;-->
+<!--            background-color: aliceblue;-->
+<!--            font-style:bold;-->
+<!--            padding-top: 8px;-->
+<!--            border: solid rgb(176, 5, 250) ;-->
+<!--            margin-left: 80px;-->
+<!--            margin-top: 20px;-->
+<!--            color:black;-->
+
+<!--        }-->
+<!--         #n{-->
+<!--            height: 30px;-->
+<!--            width: 280px;-->
+<!--            background-color: aliceblue;-->
+<!--            font-style:bold;-->
+<!--            padding-top: 8px;-->
+<!--            border: solid rgb(176, 5, 250) ;-->
+<!--            margin-left: 80px;-->
+<!--            margin-top: 20px;-->
+<!--            color:black;-->
+
+<!--        }-->
+
+<!--        .btn-grad {-->
+<!--            background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);-->
+<!--            margin-top: -50px;-->
+<!--            padding: 15px 45px;-->
+<!--            text-align: center;-->
+<!--            text-transform: uppercase;-->
+<!--            transition: 0.5s;-->
+<!--            background-size: 200% auto;-->
+<!--            color:black;-->
+<!--            box-shadow: 0 0 20px #eee;-->
+<!--            border-radius: 100px;-->
+<!--            display: block;-->
+<!--            height:50px;-->
+<!--            width:250px;-->
+<!--            margin-left:80px;-->
+<!--          }-->
+
+<!--          .btn-grad:hover {-->
+<!--            background-position: right center; /* change the direction of the change here */-->
+<!--            color: #fff;-->
+<!--            text-decoration: none;-->
+<!--          }-->
+<!--        #h{-->
+
+<!--            margin-top: 80px;-->
+<!--        }-->
+<!--        #k{-->
+<!--            height: 400px;-->
+<!--            width:30%;-->
+<!--            color:white;-->
+<!--            background-color:rgb(2, 66, 76);-->
+<!--background-image: linear-gradient(43deg, #C850C0 46%);-->
+<!--            float:right;-->
+<!--            margin-right:220px;-->
+<!--            margin-left:50px;-->
+<!--            margin-top:200px;-->
+
+
+<!--        }-->
+<!--         #x{-->
+<!--         .btn-grad {-->
+<!--            background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);-->
+<!--            margin-left: 100px;-->
+<!--            padding: 15px 45px;-->
+<!--            text-align: center;-->
+<!--            text-transform: uppercase;-->
+<!--            transition: 0.5s;-->
+<!--            background-size: 200% auto;-->
+<!--            color: white;-->
+<!--            box-shadow: 0 0 20px #eee;-->
+<!--            border-radius: 10px;-->
+<!--            display: block;-->
+<!--            text-decoration:none;-->
+<!--            height:40px;-->
+<!--            width:190px;-->
+<!--          }-->
+
+<!--          .btn-grad:hover {-->
+<!--            background-position: right center; /* change the direction of the change here */-->
+<!--            color: #fff;-->
+<!--            text-decoration:none;-->
+<!--          }-->
+<!--         }-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    </style>-->
+
+
+<!--    <script src="https://kit.fontawesome.com/81f46cafa8.js" crossorigin="anonymous"></script>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div id="z" class="container-fluid">-->
+<!--      <div id="l">-->
+<!--          <div><img style="height:200px;width:200px;border-radius:120px;" src="{% static img %}"></div><br>-->
+<!--          <div><a href="http://127.0.0.1:8000/bank_app/picedit/" class="btn"><i style="color:white;margin-left:140px;margin-bottom:20px;" class="fa-regular fa-image fa-2x"></i></a></div>-->
+<!--           <div><label><b>User Name:&#45;&#45;{{a.uname}}</b></label></div>-->
+<!--          <br>-->
+<!--          <div><label><b>Account NO:&#45;&#45;{{a.acnum}}</b></label></div><br>-->
+<!--          <div><a href="http://127.0.0.1:8000/bank_app/mini/"><input style="height:30px;width:150px;font-family:Timesnewroman;color:white;background-color:black;font-size:15px;" type="submit" value="Mini Statement"></a></div>-->
+<!--          <div><a href="http://127.0.0.1:8000/bank_app/newsdisplay/"><input style="height:30px;width:150px;font-family:Timesnewroman;color:white;background-color:black;font-size:15px;" type="submit" value="News Display"></a></div><br><br><br><br><br><br>-->
+<!--          <div><a href="http://127.0.0.1:8000/bank_app/logout_view/"><input style="height:30px;width:150px;font-family:Timesnewroman;color:white;background-color:black;font-size:15px;" type="submit" value="Logout"></a></div>-->
+
+
+<!--      </div>-->
+<!--    <div id="a">-->
+<!--        <p id="e">First Name:&#45;&#45;{{a.fname}}</p>-->
+<!--        <p id="f">Last Name:&#45;&#45;{{a.lname}}</p>-->
+<!--        <p id="q">Email:&#45;&#45;{{a.email}}</p>-->
+<!--        <p id="n">Phone:&#45;&#45;{{a.phone}}</p><br><br><br>-->
+<!--        <p id="x"><a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/editdata/"> <button class=btn-grad style="text-align:center;">Edit Details</button></a></p>-->
+
+
+<!--    </div>-->
+
+
+<!--    <div id="k">-->
+<!--        <div id="h">-->
+<!--            <a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/addmoney/"><button class=btn-grad style="border-radius: 50px;text-align:center;">Add Amount</button><br><br><br><br><br></a>-->
+<!--        </div>-->
+<!--        <div id="h1">-->
+<!--            <a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/withdraw/"><button class=btn-grad style="border-radius: 50px;text-align:center;">Withdraw Amount</button><br><br><br><br><br></a>-->
+<!--        </div>-->
+<!--        <div id="h2">-->
+<!--            <a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/checkbalance/"><button class=btn-grad style="border-radius: 50px;text-align:center;">Check Balance</button></a><br><br>-->
+<!--        </div>-->
+
+
+<!--    </div>-->
+
+
+
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+    #full{
+    height:350px;
+    width:70%;
+    background-color:black;
+    margin-left:100px;
+    margin-top:100px;
+    }
+        #image{
+        height:200px;
+        width:200px;
+        background-color:black;
+        margin-top:00px;
+        margin-left:80px;
+        float:left;
+
+        }
+
+        #details{
+        height:400px;
+        width:200px;
+        background-color:black;
+        float:right;
+        margin-right:200px;
+        color:aliceblue;
+        }
+
+
+    </style>
+
+       <script src="https://kit.fontawesome.com/81f46cafa8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="height:600px;width:80%;background-color:rgb(2, 66, 76);margin-left:100px;margin-top:100px;border-radius:100px;">
+    <div style="height:600px;width:82%;background-color:black;margin-top:20px;margin-left:105px;">
+        <nav>
+            <a href="http://127.0.0.1:8000/bank_app/logout_view/" style="color:white;margin-left:800px;"><button style="height:30px;width:100px;font-size:15px;">Log Out</button></a>
+        </nav>
+        <div id="image">
+            <div><img style="height:200px;width:200px;border-radius:120px;margin-top:20px;"
+                      src="{% static img %}"></div>
+             <div><a href="http://127.0.0.1:8000/bank_app/picedit/" class="btn"><i style="color:white;margin-left:10px;margin-bottom:20px;" class="fa-regular fa-image fa-2x"></i></a></div>
+            <div style="color:aliceblue;"><label><b>User Name:--{{a.uname}}</b></label></div>
+          <br>
+          <div style="color:aliceblue;"><label><b>Account NO:--{{a.acnum}}</b></label></div><br>
+
+            <br>
+               <div><a href="http://127.0.0.1:8000/bank_app/mini/"><input style="height:30px;width:150px;font-family:Timesnewroman;color:white;background-color:black;font-size:15px;" type="submit" value="Mini Statement"></a></div>-->
+         <div><a href="http://127.0.0.1:8000/bank_app/newsdisplay/"><input style="height:30px;width:150px;font-family:Timesnewroman;color:white;background-color:black;font-size:15px;" type="submit" value="News Display"></a></div><br><br><br><br><br><br>
+
+        </div>
+        <div id="details">
+            <h2 style="margin-top:20px;text-decoration:underline;">My Account</h2>
+            <h4><b>FIRST NAME:-</b><br>
+                <p style="height:25px;width:200px;background-color:rgba(255, 255, 255, 0.695);color:black;font-size:20px;">{{a.fname}}</p></h4>
+             <h4><b>LAST NAME:-</b><br>
+                <p style="height:25px;width:200px;background-color:rgba(255, 255, 255, 0.695);color:black;font-size:20px;">{{a.lname}}</p></h4>
+            <h4><b>EMAIL:-</b><br>
+                <p style="height:25px;width:200px;background-color:rgba(255, 255, 255, 0.695);color:black;font-size:20px;">{{a.email}}</p></h4>
+            <h4><b>PHONE:-</b><br>
+                <p style="height:25px;width:200px;background-color:rgba(255, 255, 255, 0.695);color:black;font-size:20px;">{{a.phone}}</p></h4>
+            <p id="x"><a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/editdata/"> <button class=btn-grad style="text-align:center;">Edit Details</button></a></p>
+
+
+        </div>
+
+    </div>
+    <nav>
+        <div style="margin-top:-60px;margin-left:350px;" id="h">
+           <a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/addmoney/"><button class=btn-grad style="border-radius: 50px;text-align:center;height:35px;width:150px;background-color:rgb(2, 66, 76);color:white;">Add Amount</button></a>
+
+            <a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/withdraw/"><button class=btn-grad style="border-radius: 50px;text-align:center;height:35px;width:150px;background-color:rgb(2, 66, 76);color:white;">Withdraw Amount</button></a>
+
+           <a style="text-decoration:none;" href="http://127.0.0.1:8000/bank_app/checkbalance/"><button class=btn-grad style="border-radius: 50px;text-align:center;height:35px;width:150px;background-color:rgb(2, 66, 76);color:white;">Check Balance</button></a></div>
+
+    </nav>
+
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myfunction(){
+        var body=document.getElementById('body').innerHTML;
+        var data=document.getElementById('data').innerHTML;
+        document.getElementById('body').innerHTML=data;
+        window.print()
+
+        }
+
+    </script>
+
+    <style>
+     body{
+            background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+background-repeat:no-repeat;
+background-size: 100% 800px;
+        }
+         tr:nth-child(odd){
+            background-color:lightgrey;
+        }
+        tr:nth-child(even){
+            background-color:gray;
+        }
+        #head{
+            background-color: black;
+
+        }
+        th{
+            color: white;
+            height: 50px;
+        }
+        #Table1{
+            border-collapse: collapse;
+            width:100%;
+            height:300px;
+            width:50%;
+            margin-top: 100px;
+            margin-left:25%;
+            border-radius:10px;
+            overflow:hidden;
+
+        }
+        tr{
+            text-align: center;
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+<div id="data">
+    <center><h1>Deposit Statement</h1></center>
+    <table id="Table1">
+        <tr id="head">
+            <th>SI.No</th>
+
+
+            <th>Date</th>
+            <th>Deposit Amount</th>
+
+        </tr>
+        {% for i in x %}
+        {% if i.uid == id %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.amount}}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+
+
+    </table><br>
+
+</div>
+
+<center><button onclick="myfunction()">print the deposit page</button></center>
+</body>
+</html>

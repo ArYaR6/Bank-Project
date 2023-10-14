@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+    body{
+        background-image:url("{% static 'Cost-Plus Contract_ Definition, Types, and Example.png' %}");background-image:no-repeat;background-size:100% 800px;
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+    <div style="margin-left:45%;margin-top:15%;font-size:20px;">
+  <h1>Your Current Balance Is...</h1><br>
+        <p><b style="font-family:Arial Black;">Account Number:- <strong style="color:blue;">{{acnum}}</strong></b></p>
+        <p><b style="font-family:Arial Black;">Balance:- <strong style="color:blue;">{{balance}}</strong></b></p>
+    </div>
+
+</form>
+
+</body>
+</html>

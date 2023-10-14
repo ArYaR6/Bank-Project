@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        body{
+        background-image:url("{% static 'Showdown looms as Trump demands funding for wall on U_S.-Mexico border' %}");background-repeat:no repeat;background-size:100% 500px;background-attachment:scroll;
+        }
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+<div style="height:300px;width:400px;background-color:#;margin-left:40%;margin-top:12%;font-size:25px;">
+  <h1 style="color:white">Check Your Balance</h1><br>
+  <input style="height:35px;width:300px;border:solid black;text-align:center;font-size:18px;font-family:timesnewroman;background-color:#;border-radius:20px;" type="number" name="pin" placeholder="Enter 4 Digit Pin"><br><br><br>
+    <div style="margin-left:70px;"><input style="border:solid white;height:40px;width:150px;border:#;text-align:center;font-family:goudy old style;color:whitesmoke;text-align:#;font-size:18px;border-radius:100px;background-color:black;" type="submit" class="btn-grad" value="Check Balance"></div>
+    </div>
+</form>
+
+</body>
+</html>

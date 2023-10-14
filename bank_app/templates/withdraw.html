@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        body{
+         background-image:url("{% static 'Find the E-Commerce Payment System _ Steer Through.jpeg' %}");background-repeat:no repeat;background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+
+     </div>
+        <div style="height:500px;width:800px;background-color:;margin-bottom:-150px;padding-bottom:300px;padding">
+            <div style="padding-top:100px;padding-left:200px;font-size:30px;color:aliceblue;"><h1>Withdraw Amount</h1></div><br>
+            <div class="row">
+                <div class="col-6">
+
+                    <input style="text-align:center;margin-left:0px;height:35px;width:300px;background-color:white;border:solid black;"
+                           type="number" name="amount" placeholder="Enter amount to withdraw">
+
+
+                </div><br><br>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-6">
+
+
+                    <input style="text-align:center;margin-left:0px;height:35px;width:300px;background-colo:rgb(176, 5, 250);border:solid black;"
+                           type="number" name="pi" placeholder="Enter the 4 digit pin"><br><br><br>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <input style="margin-left:0px;width:150px;height:40px;background-color:aliceblue;border-radius:20px;"
+                       class="btn" type="submit" value="Withdraw Amount">
+            </div>
+        </div>
+    </div>
+
+
+</form>
+
+</body>
+</html>

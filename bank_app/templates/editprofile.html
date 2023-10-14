@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         #k{
+            height: 650px;
+            width:80%;
+            color:white;
+            background-color:rgb(2, 66, 76);
+background-image: linear-gradient(43deg, #C850C0 46%);
+            float:right;
+            margin-right: 144.3px;
+            margin-top:40px;
+            border-radius:;
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="k">
+ <center>       <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            <center><h2 style="margin-top:80px;font-size:30px;color:rgb(190, 253, 17);">Edit Profile Details</h2><br><br>
+            </center>
+
+            <div class="row">
+                <div class="col-6">
+                    <input style="text-align:center;margin-right:0px;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="text" name="fname" placeholder="First Name" value="{{a.fname}}">
+
+                </div>
+                <br>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                     <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="text" name="lname" placeholder="Last Name" value="{{a.lname}}">
+
+                </div>
+                <br>
+
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="number" name="phone" placeholder="Phone" value="{{a.phone}}">
+
+                </div>
+                <br>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                     <input style="text-align:center;height:35px;width:220px;border-radius:20px;background-color:rgb(224, 249, 152);"
+                           type="email" name="email" placeholder="Email" value="{{a.email}}">
+
+
+                </div>
+                <br><br><br><br>
+
+
+            </div>
+
+            <div class="row">
+                <input style="margin-left:0px;width:150px;height:40px;background-color:rgb(190, 253, 17);border-radius:20px;"
+                       class="btn" type="submit" value="SUBMIT">
+
+
+            </div>
+ </form></center>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <style>
+        #a{
+            height: 750px;
+            width:55%;
+            color: rgb(176, 5, 250);
+            background-image:url("{% static '' %}");background-repeat:no repeat;background-size:100% 1000px;background-attachment:scroll;
+            text-decoration:none ;
+
+            float: left;
+            margin-left:350px;
+            border:solid black;
+
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="a" class="container-fluid">
+
+    <h1>Latest News And Updates by Axis Bank</h1><br>
+    <div class="row">
+
+        {% for i,j,k,l in x %}
+
+        <div class="col-12">
+            <p style="font-size:20px;"><b>{{i}}</b></p>
+            <p>{{j}}<a href="">Read More</a></p>
+            <p>{{k}}<br><i class="fa-solid fa-thumbs-up"></i> <i class="fa-regular fa-heart"></i></p>
+            <a style="color:blue" href="http://127.0.0.1:8000/bank_app/nedit/{{l}}" class="btn"><button>Edit</button></a>
+            <a href="http://127.0.0.1:8000/bank_app/ndelete/{{l}}" class="btn"><button>Delete</button></a>
+
+
+        </div>
+        {% endfor %}
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
